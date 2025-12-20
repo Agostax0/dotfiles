@@ -1,8 +1,8 @@
 #!/bin/bash
 
-PACKAGES=(stow hyprland hypridle hyprlock waybar)
+PACKAGES=(stow kitty wofi hyprland hypridle hyprlock waybar)
 pacman -Syu "${PACKAGES[@]}"
 
-STOWABLES=(hyprland hyprlock waybar)
+STOWABLES=(kitty hyprland hyprlock waybar)
 
 stow "${STOWABLES[@]}"
