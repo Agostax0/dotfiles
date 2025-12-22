@@ -8,8 +8,8 @@
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/submap",
-        "hyprland/scratchpad"
+        "hyprland/submap"
+        //"hyprland/scratchpad"
         //"custom/media"
     ],
     "modules-center": [
@@ -17,49 +17,53 @@
     ],
     "modules-right": [
         "mpd",
-        "idle_inhibitor",
+        //"idle_inhibitor",
         "pulseaudio",
-        "network",
-        "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
+        //"network",
+        //"power-profiles-daemon",
+        //"cpu",
+        //"memory",
+        //"temperature",
         "backlight",
-        "keyboard-state",
+        //"keyboard-state",
         //"hyprland/language",
         "battery",
-        "battery#bat2",
+        //"battery#bat2",
         "clock",
         "tray"
         //"custom/power"
     ],
 
-     "hyprland/workspaces": {
-         "disable-scroll": true,
-         "all-outputs": true,
-         "warp-on-scroll": false,
-         "format": "{name}: {icon}",
-         "format-icons": {
-             //"1": "",
-             //"2": "",
-             //"3": "",
-             //"4": "",
-             //"5": "",
-             "urgent": "",
-             //"focused": "",
-             "active":"",
-             "default": ""
-         }
-     },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
+    "hyprland/workspaces": {
+      "disable-scroll": true,
+      //"all-outputs": true,
+      "active-only": false,  
+      "warp-on-scroll": false,
+      "format": "{name}: {icon}",
+      "format-icons": {
+          //"1": "",
+          //"2": "",
+          //"3": "",
+          //"4": "",
+          //"5": "",
+          "urgent": "",
+          //"focused": "",
+          "active":"",
+          "default": ""
+      },
+      "persistent-workspaces":{
+          "*": 5
+      }
     },
+    //"keyboard-state": {
+    //    "numlock": true,
+    //    "capslock": true,
+    //    "format": "{name} {icon}",
+    //    "format-icons": {
+    //        "locked": "",
+    //        "unlocked": ""
+    //    }
+    //},
     "hyprland/submap": {
         "format": "<span style=\"italic\">{}</span>"
     },
@@ -151,9 +155,9 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
+    //"battery#bat2": {
+    //    "bat": "Bt2AT2"
+    //},
     "power-profiles-daemon": {
       "format": "{icon}",
       "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
