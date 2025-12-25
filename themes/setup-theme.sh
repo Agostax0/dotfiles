@@ -1,1 +1,1 @@
-stow -t ~/ 
+stow -t ~/ $1
