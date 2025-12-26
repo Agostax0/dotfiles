@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PACKAGES=(stow kitty rofi hyprland hypridle hyprlock hyprpaper waybar otf-font-awesome brave-browser wl-clipboard)
+PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset rofi waybar brightnessctl otf-font-awesome brave-browser wl-clipboard)
 pacman -Syu "${PACKAGES[@]}"
 
 STOWABLES=(kitty rofi hyprland hypridle hyprlock hyprpaper waybar)
