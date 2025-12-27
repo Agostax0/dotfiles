@@ -1,9 +1,9 @@
 #!/bin/bash
 
-PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset hyprpicker rofi waybar brightnessctl otf-font-awesome brave-browser wl-clipboard)
-pacman -Syu "${PACKAGES[@]}"
+PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset hyprpicker rofi waybar brightnessctl otf-font-awesome brave-browser wl-clipboard hyprshot)
+pacman -Sy "${PACKAGES[@]}" --needed --noconfirm
 
-STOWABLES=(kitty rofi hyprland hypridle hyprlock hyprpaper waybar)
+STOWABLES=(kitty rofi hyprland hypridle hyprlock hyprpaper waybar hyprshot)
 stow -t ~/ "${STOWABLES[@]}"
 
 BASE_FONT=monospace
