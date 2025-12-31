@@ -17,7 +17,7 @@
     #
     # If this option is set to mouse or keyboard, the monitor option
     # will be ignored.
-    follow = none
+    follow = keyboard
 
     ### Geometry ###
 
@@ -341,31 +341,49 @@
     per_monitor_dpi = false
 
 
+[global]
+  frame_color = "#89b4fa"
+  separator_color= frame
+  highlight = "#89b4fa"
+
 [urgency_low]
-    # IMPORTANT: colors have to be defined in quotation marks.
-    # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#222222"
-    foreground = "#888888"
-    timeout = 10
-    # Icon for notifications with low urgency
-    default_icon = dialog-information
+  background = "#1e1e2e"
+  foreground = "#cdd6f4"
 
 [urgency_normal]
-    background = "#285577"
-    foreground = "#ffffff"
-    timeout = 10
-    override_pause_level = 30
-    # Icon for notifications with normal urgency
-    default_icon = dialog-information
+  background = "#1e1e2e"
+  foreground = "#cdd6f4"
 
 [urgency_critical]
-    background = "#900000"
-    foreground = "#ffffff"
-    frame_color = "#ff0000"
-    timeout = 0
-    override_pause_level = 60
-    # Icon for notifications with critical urgency
-    default_icon = dialog-warning
+  background = "#1e1e2e"
+  foreground = "#cdd6f4"
+  frame_color = "#fab387"
+
+#[urgency_low]
+#    # IMPORTANT: colors have to be defined in quotation marks.
+#    # Otherwise the "#" and following would be interpreted as a comment.
+#    background = "#222222"
+#    foreground = "#888888"
+#    timeout = 10
+#    # Icon for notifications with low urgency
+#    default_icon = dialog-information
+
+#[urgency_normal]
+#    background = "#285577"
+#    foreground = "#ffffff"
+#    timeout = 10
+#    override_pause_level = 30
+#    # Icon for notifications with normal urgency
+#    default_icon = dialog-information
+
+#[urgency_critical]
+#    background = "#900000"
+#    foreground = "#ffffff"
+#    frame_color = "#ff0000"
+#    timeout = 0
+#    override_pause_level = 60
+#    # Icon for notifications with critical urgency
+#    default_icon = dialog-warning
 
 # Every section that isn't one of the above is interpreted as a rules to
 # override settings for certain messages.
