@@ -7,19 +7,19 @@ chosen=$(echo "$OPTIONS" | rofi -sep $SEPARATOR -dmenu -p $PROMPT)
 
 case $chosen in
 "Active Monitor")
-  hyprshot -s -m active -m output
+  hyprshot -m active -m output
   ;;
 "Region")
-  hyprshot -s -m region
+  hyprshot -m region
   ;;
 "Monitor")
-  hyprshot -s -m output
+  hyprshot -m output
   ;;
 "Window")
-  hyprshot -s -m window
+  hyprshot -m window
   ;;
 "Active Window")
-  hyprshot -s -m active -m window
+  hyprshot -m active -m window
   ;;
 *)
   echo "err"
