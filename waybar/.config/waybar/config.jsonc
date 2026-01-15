@@ -172,11 +172,11 @@
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format": "{essid} ({signalStrength}%) ",
-        "on-click": "hyprctl dispatch exec \" [float] kitty nmtui \""
+        "on-click": "hyprctl dispatch exec \" [float] kitty nmtui \"",
         //"format-ethernet": "{ipaddr}/{cidr} ",
         //"tooltip-format": "{ifname} via {gwaddr} ",
         //"format-linked": "{ifname} (No IP) ",
-        //"format-disconnected": "Disconnected ⚠",
+        "format-disconnected": "Disconnected ⚠",
         ////"format-alt": "  {signalStrength}%"
     },
     "pulseaudio": {
