@@ -15,14 +15,14 @@ for FOLDER in "${NEEDED_DIRS[@]}"; do
 done
 
 echo "Stowing configs"
-stow -t ~/ "${STOWABLES[@]}"
+stow -t $HOME "${STOWABLES[@]}"
 
 echo "Installing mocha theme"
 BASE_FONT=monospace
-sh -c "cd fonts/ && stow -t ~/ $BASE_FONT"
+sh -c "cd fonts/ && stow -t $HOME $BASE_FONT"
 
 BASE_WALLPAPER=dragon-of-dojima-dark
-sh -c "cd wallpapers/ && stow -t ~/ $BASE_WALLPAPER"
+sh -c "cd wallpapers/ && stow -t $HOME $BASE_WALLPAPER"
 
 BASE_THEME=mocha
-sh -c "cd themes/ && stow -t ~/ $BASE_THEME"
+sh -c "cd themes/ && stow -t $HOME $BASE_THEME"
