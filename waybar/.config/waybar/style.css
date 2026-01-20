@@ -108,3 +108,11 @@
   margin-right: 1rem;
   border-radius: 1rem;
 }
+
+tooltip {
+  background-color: @surface0;
+}
+
+tooltip label {
+  color: @text;
+}

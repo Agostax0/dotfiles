@@ -138,7 +138,8 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "", "", "", "", "", "", ""]
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "tooltip": false
     },
     "battery": {
         "states": {
@@ -177,6 +178,7 @@
         //"tooltip-format": "{ifname} via {gwaddr} ",
         //"format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
+        "tooltip": false
         ////"format-alt": "  {signalStrength}%"
     },
     "pulseaudio": {
@@ -197,19 +199,7 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    }
-    //"custom/media": {
-    //    "format": "{icon} {text}",
-    //    "return-type": "json",
-    //    "max-length": 40,
-    //    "format-icons": {
-    //        "spotify": "",
-    //        "default": "🎜"
-    //    },
-    //    "escape": true,
-    //    "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-    //    // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
-    //},
+    },
     //"custom/power": {
     //    "format" : "⏻ ",
 	//	"tooltip": false,
