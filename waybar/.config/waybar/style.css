@@ -53,8 +53,8 @@
 
 #clock {
   color: @blue;
-  border-radius: 0px 1rem 1rem 0px;
-  margin-right: 1rem;
+  /*border-radius: 0px 1rem 1rem 0px;
+  margin-right: 1rem;*/
   padding-top: 3px;
 }
 
@@ -114,5 +114,14 @@ tooltip {
 }
 
 tooltip label {
+  color: @text;
+}
+
+menu {
+  background-color: @surface0;
+  color: rgb(255,0,0);
+}
+
+menuitem label{
   color: @text;
 }
