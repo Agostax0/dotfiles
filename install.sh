@@ -17,6 +17,9 @@ done
 echo "Stowing configs"
 stow -t $HOME "${STOWABLES[@]}"
 
+echo "Enabling scripts"
+find ./scripts/ -type f -name "*.sh" -exec chmod +x {} \;
+
 echo "Installing mocha theme"
 BASE_FONT=monospace
 sh -c "cd fonts/ && stow -t $HOME $BASE_FONT"
