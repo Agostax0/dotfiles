@@ -45,6 +45,7 @@
 #pulseaudio,
 #network,
 #custom-lock,
+#custom-pomodoro,
 #custom-power {
   background-color: @surface0;
   padding: 0.1rem 1rem;
@@ -107,6 +108,10 @@
 #tray {
   margin-right: 1rem;
   border-radius: 1rem;
+}
+
+#custom-pomodoro {
+  color: @lavender;
 }
 
 tooltip {
