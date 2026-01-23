@@ -2,7 +2,7 @@
 # This pomodoro timer was inspired by nirabyte's waybar-timer (https://github.com/nirabyte/waybar-timer/tree/main)
 POMODORO_WORK=25 # Minutes
 POMODORO_BREAK=5 # Minutes
-POMODORO_REPEAT=10
+POMODORO_REPEAT=3
 
 POMODORO_WORK_SECONDS="$((POMODORO_WORK * 60))"
 POMODORO_BREAK_SECONDS="$((POMODORO_BREAK * 60))"
