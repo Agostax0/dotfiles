@@ -176,7 +176,7 @@ while true; do
     ;;
   "$IDLE")
     ICON="$ICON_IDLE"
-    TEXT="$(format_time "$POMODORO_WORK_SECONDS")"
+    TEXT="IDLE"
 
     if [ $((NOW - LAST_ACT)) -gt "$INACTIVITY_LIMIT" ]; then
       WS "$DISABLED" "0" "0" "0" "$NOW" "$POMODORO_WORK_STATE" "0"
