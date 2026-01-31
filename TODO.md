@@ -1,0 +1,2 @@
+- $mod + s = creates screenshots that still capture the screenshot type menu
+- screenshots should have an action that opens the newly created image upon click
