@@ -1,8 +1,8 @@
 #!/bin/bash
 
-PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset hyprpicker rofi waybar dunst brightnessctl otf-font-awesome brave-browser wl-clipboard hyprshot pavucontrol)
+PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset hyprpicker rofi waybar dunst brightnessctl otf-font-awesome brave-browser wl-clipboard pavucontrol hyprshot zsh docker docker-compose)
 NEEDED_DIRS=(kitty rofi hypr waybar dunst wallpapers waybar/modules waybar/modules/custom)
-STOWABLES=(kitty rofi hyprland hypridle hyprlock hyprpaper waybar hyprshot dunst hyprsunset scripts)
+STOWABLES=(kitty rofi hyprland hypridle hyprlock hyprpaper waybar hyprshot dunst hypersunset scripts)
 
 echo "Installing packages"
 pacman -Sy "${PACKAGES[@]}" --needed --noconfirm
