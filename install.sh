@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset hyprpicker rofi waybar dunst brightnessctl otf-font-awesome brave-browser wl-clipboard hyprshot zsh)
+PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset hyprpicker rofi waybar dunst brightnessctl otf-font-awesome brave-browser wl-clipboard hyprshot zsh docker docker-compose)
 NEEDED_DIRS=(kitty rofi hypr waybar dunst wallpapers)
 STOWABLES=(kitty rofi hyprland hypridle hyprlock hyprpaper waybar hyprshot dunst scripts)
 
