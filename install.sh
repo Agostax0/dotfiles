@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset hyprpicker rofi waybar dunst brightnessctl otf-font-awesome brave-browser wl-clipboard hyprshot zsh)
+PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset hyprpicker rofi waybar dunst brightnessctl otf-font-awesome brave-browser wl-clipboard hyprshot)
 NEEDED_DIRS=(kitty rofi hypr waybar dunst wallpapers)
 STOWABLES=(kitty rofi hyprland hypridle hyprlock hyprpaper waybar hyprshot dunst scripts)
 
@@ -14,8 +14,6 @@ for FOLDER in "${NEEDED_DIRS[@]}"; do
   mkdir -p "$CONFIG_DIR/$FOLDER"
 done
 
-echo "Copying zsh configs"
-echo ./.zshrc >$HOME/.zshrc
 echo "Stowing configs"
 stow -t $HOME "${STOWABLES[@]}"
 
