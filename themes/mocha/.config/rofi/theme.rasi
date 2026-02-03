@@ -1,7 +1,8 @@
 /**
- * Catppuccin Mocha theme
- * Color palette copied from https://catppuccin.com/palette
- * https://github.com/hiimsergey/rofi-catppuccin
+ * name:     Catppuccin Rofi Mocha
+ * author:   catppuccin (https://github.com/catppuccin)
+ * license:  MIT
+ * upstream: https://github.com/catppuccin/rofi
  */
 
 * {
