@@ -138,9 +138,10 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{percent}% {icon}",
+        "format": "{icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "tooltip": false
+        "tooltip": true,
+        "tooltip-format": "{percent}%"
     },
     "battery": {
         "states": {

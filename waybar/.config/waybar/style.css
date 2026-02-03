@@ -79,6 +79,8 @@
 
 #backlight {
   color: @yellow;
+  padding-left: 5px;
+  padding-right: 6px;
 }
 
 #backlight, #battery {
