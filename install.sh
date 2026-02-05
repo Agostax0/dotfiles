@@ -38,5 +38,5 @@ sh -c "cd themes/ && stow -t $HOME $BASE_THEME"
 git config --global core.editor "nvim"
 
 echo "Copying zsh configs"
-cat ./.zshrc >$HOME/.zshrc
+cat ./.zshrc >>$HOME/.zshrc
 source $HOME/.zshrc
