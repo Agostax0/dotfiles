@@ -4,8 +4,13 @@ PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset hyprpicker 
 NEEDED_DIRS=(kitty rofi hypr waybar dunst wallpapers waybar/modules waybar/modules/custom)
 STOWABLES=(kitty rofi hyprland hypridle hyprlock hyprpaper waybar hyprshot dunst hypersunset scripts)
 
+DEVELOPMENT_ENVIRONMENT=(zsh docker docker-compose chromium xdg-desktop-portal-wlr nvim)
+
 echo "Installing packages"
 pacman -Sy "${PACKAGES[@]}" --needed --noconfirm
+
+echo "Installing dev packages"
+pacman -Sy "${DEVELOPMENT_ENVIRONMENT[@]}" --needed --noconfirm
 
 CONFIG_DIR="$HOME/.config/"
 
@@ -29,3 +34,9 @@ sh -c "cd wallpapers/ && stow -t $HOME $BASE_WALLPAPER"
 
 BASE_THEME=mocha
 sh -c "cd themes/ && stow -t $HOME $BASE_THEME"
+
+git config --global core.editor "nvim"
+
+echo "Copying zsh configs"
+cat ./.zshrc >$HOME/.zshrc
+source $HOME/.zshrc
