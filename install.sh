@@ -1,11 +1,16 @@
 #!/bin/bash
 
-PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset hyprpicker rofi waybar dunst brightnessctl otf-font-awesome brave-browser wl-clipboard hyprshot zsh docker docker-compose)
+PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset hyprpicker rofi waybar dunst brightnessctl otf-font-awesome brave-browser wl-clipboard hyprshot)
 NEEDED_DIRS=(kitty rofi hypr waybar dunst wallpapers)
 STOWABLES=(kitty rofi hyprland hypridle hyprlock hyprpaper waybar hyprshot dunst scripts)
 
+DEVELOPMENT_ENVIRONMENT=(zsh docker docker-compose chromium xdg-desktop-portal-wlr nvim)
+
 echo "Installing packages"
 pacman -Sy "${PACKAGES[@]}" --needed --noconfirm
+
+echo "Installing dev packages"
+pacman -Sy "${DEVELOPMENT_ENVIRONMENT[@]}" --needed --noconfirm
 
 CONFIG_DIR="$HOME/.config/"
 
@@ -14,8 +19,6 @@ for FOLDER in "${NEEDED_DIRS[@]}"; do
   mkdir -p "$CONFIG_DIR/$FOLDER"
 done
 
-echo "Copying zsh configs"
-echo ./.zshrc >$HOME/.zshrc
 echo "Stowing configs"
 stow -t $HOME "${STOWABLES[@]}"
 
@@ -31,3 +34,9 @@ sh -c "cd wallpapers/ && stow -t $HOME $BASE_WALLPAPER"
 
 BASE_THEME=mocha
 sh -c "cd themes/ && stow -t $HOME $BASE_THEME"
+
+git config --global core.editor "nvim"
+
+echo "Copying zsh configs"
+cat ./.zshrc >$HOME/.zshrc
+source $HOME/.zshrc
