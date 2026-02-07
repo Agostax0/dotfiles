@@ -2,7 +2,7 @@
 
 PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset hyprpicker rofi waybar dunst brightnessctl otf-font-awesome brave-browser wl-clipboard hyprshot)
 NEEDED_DIRS=(kitty rofi hypr waybar dunst wallpapers)
-STOWABLES=(kitty rofi hyprland hypridle hyprlock hyprpaper waybar hyprshot dunst scripts)
+STOWABLES=(kitty rofi hyprland hypridle hyprlock hyprpaper waybar hyprshot dunst hyprsunset scripts)
 
 echo "Installing packages"
 pacman -Sy "${PACKAGES[@]}" --needed --noconfirm
