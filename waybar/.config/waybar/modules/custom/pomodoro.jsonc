@@ -1,0 +1,14 @@
+{
+  "custom/pomodoro": {
+    "exec":"$HOME/.config/waybar/scripts/timer.sh",
+    "return-type": "json",
+    "format": "{}",
+    "menu": "on-click",
+    "menu-file": "$HOME/.config/waybar/menus/pomodoro_menu.xml",
+    "menu-actions": {
+      "start": "$HOME/.config/waybar/scripts/timer.sh start",
+      "stop": "$HOME/.config/waybar/scripts/timer.sh stop",
+      "skip": "$HOME/.config/waybar/scripts/timer.sh skip"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format": "{icon}",
+        "tooltip-format": "{essid} {signalStrength}%", 
+        "on-click": "hyprctl dispatch exec \" [float] kitty nmtui \"",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "format-disconnected": "󰤫",
+        "format-disabled": "󰀝",
+    }
+}
