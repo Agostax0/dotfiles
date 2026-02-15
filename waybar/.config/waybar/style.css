@@ -37,14 +37,13 @@
   border-radius: 1rem;
 }
 
-#custom-music,
 #tray,
 #backlight,
 #clock,
 #battery,
 #network,
 #pulseaudio,
-#custom-lock,
+#custom-wireplumber-output,
 #custom-pomodoro,
 #custom-power {
   background-color: @surface0;
@@ -87,7 +86,7 @@
   border-radius: 0;
 }
 
-#pulseaudio {
+#custom-wireplumber-output {
   color: @maroon;
   border-radius: 1rem 0px 0px 1rem;
   margin-left: 1rem;

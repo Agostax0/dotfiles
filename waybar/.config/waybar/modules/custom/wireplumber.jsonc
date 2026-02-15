@@ -1,0 +1,8 @@
+{
+  "custom/wireplumber-output": {
+    "tooltip": false,
+    "max-length": 6,
+    "exec": "$HOME/.config/waybar/scripts/pipewire.sh",
+    "on-click": "$HOME/.config/waybar/scripts/openFloatingWindow.sh pavucontrol -t 3"
+  }
+}

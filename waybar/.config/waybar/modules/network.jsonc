@@ -4,7 +4,7 @@
         // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format": "{icon}",
         "tooltip-format": "{essid} {signalStrength}%", 
-        "on-click": "hyprctl dispatch exec \" [float] kitty nmtui \"",
+        "on-click": "$HOME/.config/waybar/scripts/openFloatingWindow.sh kitty nmtui",
         "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
         "format-disconnected": "󰤫",
         "format-disabled": "󰀝",
