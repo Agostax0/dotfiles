@@ -1,8 +1,20 @@
 {
   "custom/wireplumber-output": {
+    "exec": "$HOME/.config/waybar/scripts/pipewire.sh output",
+    "return-type": "json",
+    "format": "{text} {icon}",
+    "format-icons": {
+      "muted": "󰝟",
+      "low": "",
+      "medium": "",
+      "high": ""
+    },
+    "on-click": "$HOME/.config/waybar/scripts/openFloatingWindow.sh pavucontrol -t 3"
+  },
+  "custom/wireplumber-input": {
     "tooltip": false,
     "max-length": 6,
-    "exec": "$HOME/.config/waybar/scripts/pipewire.sh",
-    "on-click": "$HOME/.config/waybar/scripts/openFloatingWindow.sh pavucontrol -t 3"
+    "exec": "$HOME/.config/waybar/scripts/pipewire.sh input",
+    "on-click": "$HOME/.config/waybar/scripts/openFloatingWindow.sh pavucontrol -t 4"
   }
 }
