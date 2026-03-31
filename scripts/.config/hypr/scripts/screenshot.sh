@@ -5,6 +5,8 @@ OPTIONS="Region${SEPARATOR}Monitor${SEPARATOR}Window${SEPARATOR}Active Monitor${
 
 chosen=$(echo "$OPTIONS" | rofi -sep $SEPARATOR -dmenu -p $PROMPT)
 
+sleep 0.1
+
 case $chosen in
 "Active Monitor")
   hyprshot -m active -m output
