@@ -36,6 +36,7 @@ BASE_THEME=mocha
 sh -c "cd themes/ && stow -t $HOME $BASE_THEME"
 
 git config --global core.editor "nvim"
+git config --global push.autoSetupRemote true
 
 echo "Copying zsh configs"
 cat ./.zshrc >>$HOME/.zshrc
