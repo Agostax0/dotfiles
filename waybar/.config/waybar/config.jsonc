@@ -10,7 +10,9 @@
     "~/.config/waybar/modules/backlight.jsonc",
     "~/.config/waybar/modules/battery.jsonc",
     "~/.config/waybar/modules/clock.jsonc",
-    "~/.config/waybar/modules/custom/power.jsonc"
+    "~/.config/waybar/modules/custom/power.jsonc",
+    "~/.config/waybar/modules/memory.jsonc",
+    "~/.config/waybar/modules/cpu.jsonc",
   ],
   "reload_style_on_change": true,
   "layer": "top", // Waybar at top layer
@@ -20,7 +22,7 @@
   // Choose the order of the modules
   "modules-left": [
     "hyprland/workspaces",
-    "hyprland/submap"
+    "hyprland/submap",
   ],
   "modules-center": [
       "hyprland/window"
@@ -31,6 +33,8 @@
     "network",
     "backlight",
     "battery",
+    "memory",
+    "cpu",
     "clock",
     "custom/power"
   ]

@@ -45,6 +45,8 @@
 #pulseaudio,
 #custom-wireplumber-output,
 #custom-pomodoro,
+#memory,
+#cpu,
 #custom-power {
   background-color: @surface0;
   padding: 0.1rem 1rem;
