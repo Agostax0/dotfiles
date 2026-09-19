@@ -92,12 +92,12 @@ if [ -n "$1" ]; then
     ;;
   "skip")
     if [ "$POMODORO_CURRENT_STATE" == "$POMODORO_WORK_STATE" ]; then
-      notify-send "Skipping work"
+      notify-send "[Timer] Skipping work"
       WS "$RUNNING" "$POMODORO_BREAK_SECONDS" "$NOW" "0" "$NOW" "$POMODORO_BREAK_STATE" "$POMODORO_CURRENT_NUMBER"
     elif [[ "$POMODORO_CURRENT_STATE" == "$POMODORO_BREAK_STATE" ]]; then
       NEW_POMODORO_NUMBER=$((POMODORO_CURRENT_NUMBER + 1))
       if [ "$NEW_POMODORO_NUMBER" -gt "$POMODORO_REPEAT" ]; then
-        notify-send "No more POMODORO" &
+        notify-send "[Timer] No more POMODORO" &
         WS "$IDLE" "$POMODORO_WORK_SECONDS" "0" "0" "$NOW" "$POMODORO_WORK_STATE" "0"
       else
         notify-send "Skipping break"

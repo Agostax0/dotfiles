@@ -1,8 +1,8 @@
 #!/bin/bash
 
 PACKAGES=(stow kitty hyprland hypridle hyprlock hyprpaper hyprsunset hyprpicker rofi waybar dunst brightnessctl otf-font-awesome brave-browser wl-clipboard hyprshot pavucontrol)
-NEEDED_DIRS=(kitty rofi hypr waybar dunst wallpapers waybar/modules waybar/modules/custom)
-STOWABLES=(kitty rofi hyprland hypridle hyprlock hyprpaper waybar hyprshot dunst hyprsunset scripts)
+NEEDED_DIRS=(kitty rofi hypr waybar dunst wallpapers waybar/modules waybar/modules/custom sounds)
+STOWABLES=(kitty rofi hyprland hypridle hyprlock hyprpaper waybar hyprshot dunst hyprsunset scripts sounds)
 
 DEVELOPMENT_ENVIRONMENT=(zsh docker docker-compose chromium xdg-desktop-portal-wlr nvim)
 
@@ -40,5 +40,5 @@ git config --global push.autoSetupRemote true
 git config --global fetch.prune true
 
 echo "Copying zsh configs"
-cat ./.zshrc >>$HOME/.zshrc
-source $HOME/.zshrc
+# cat ./.zshrc >>$HOME/.zshrc
+# source $HOME/.zshrc

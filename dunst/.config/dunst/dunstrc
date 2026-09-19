@@ -364,6 +364,9 @@
   foreground = "#cdd6f4"
   frame_color = "#fab387"
 
+[play_sound]
+  summary = "[Timer]*"
+  script = "~/.config/waybar/scripts/play_sound.sh"
 #[urgency_low]
 #    # IMPORTANT: colors have to be defined in quotation marks.
 #    # Otherwise the "#" and following would be interpreted as a comment.
